@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Prática 6: Continuação: formulários com HTML</title>
+</head>
+<body>
+  <section>
+    <h1>Reserva de Viagem</h1>
+    <form action="">
+      <fieldset style="padding: 2rem;">
+        <legend>Dados da Reserva</legend>
+        <label for="nome">
+          Nome
+          <input type="text" name="nome" id="nome" placeholder="Ex: Jhon Doe" style="width: 100%;">
+        </label>
+        <br>
+        <br>
+        <label for="email">
+          Email
+          <input type="email" name="email" id="email" placeholder="Ex: jhondoe@email.com" style="width: 100%;">
+        </label>
+        <hr style="margin: 20px 0;">
+        <label style="width: 100%;">
+          Serviços Desejados
+          <br>
+          <br>
+          <label for="passagens" style="margin-right: 20px;">
+            <input type="checkbox" name="passagens" id="passagens" >
+            Compra de Passagens
+          </label>
+          <label for="hospedagem" style="margin-right: 20px;">
+            <input type="checkbox" name="hospedagem" id="hospedagem">
+            Reserva de Hospedagem
+          </label>
+          <label for="aluguelVeiculos" style="margin-right: 20px;">
+            <input type="checkbox" name="aluguelVeiculos" id="aluguelVeiculos">
+            Aluguel de Veículos
+          </label>
+        </label>
+
+        <br>
+        <br>
+        <label for="comentarios">
+          Comentários Adicionais
+          <br>
+          <textarea name="comentarios" id="comentarios" placeholder="Compartilhe informações adicionais, preferências ou solicitações especiais..." cols="60" rows="5"></textarea>
+        </label>
+      </fieldset>
+      <fieldset style="padding: 2rem;">
+        <legend>Dados de Pagamento</legend>
+
+        <label>
+          Formas de Pagamento
+          <br>
+          <br>
+          <label for="cartaoCredito" style="margin-right: 20px;">
+            <input type="radio" name="formaPagamento" value="cartaoCredito" id="cartaoCredito">
+            Cartão de Crédito
+          </label>
+          <label for="boleto" style="margin-right: 20px;">
+            <input type="radio" name="formaPagamento" value="boleto" id="boleto">
+            Boleto
+          </label>
+          <label for="pix" style="margin-right: 20px;">
+            <input type="radio" name="formaPagamento" value="pix" id="pix">
+            Pix
+          </label>
+        </label>
+
+        <br>
+        <br>
+        <label for="prazoPagamento">
+          Prazo de Pagamento
+          <br>
+          <select name="prazoPagamento" id="prazoPagamento">
+            <option value="AVista">À Vista</option>
+            <option value="5x">Cinco Vezes Sem Juros</option>
+            <option value="10x">Dez Vezes Com Juros</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
